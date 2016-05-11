@@ -1,0 +1,6 @@
+framework module Pods_MillionaireUITests {
+  umbrella header "Pods-MillionaireUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
