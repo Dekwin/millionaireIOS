@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  Millionaire
+
+  Created by Igor Kasyanenko on 21.05.16.
+  Copyright © 2016 Igor Kasyanenko. All rights reserved.
+*/
+
+ALERT_TITLE_CALL_FRIEND = "Звонок другу";
+ALERT_MESSAGE_CALL_FRIEND = "Позвонить другу?";
+
+ALERT_TITLE_FIFTYFIFTY = "50/50";
+ALERT_MESSAGE_FIFTYFIFTY = "Удалить два неправильных ответа?";
+
+ALERT_TITLE_ASKAUDIENCE = "Публика";
+ALERT_MESSAGE_ASKAUDIENCE = "Показать, как ответили другие игроки?";
+
+TITLE_GAME_FINISHED = "Игра закончена";
+
+MESSAGE_GAME_FINISHED_TIME = "Время вышло";
+
+MESSAGE_GAME_FINISHED_SUCCESS = "Поздравляем, вы выиграли 1000000!";
+
+MESSAGE_RETRY = "\nПовторить?";
+
+MESSAGE_WRONG_ANSWER = "Ответ неправильный";
+
+MESSAGE_RIGHT_ANSWER = "правильный ответ";
+

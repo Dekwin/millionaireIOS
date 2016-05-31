@@ -27,6 +27,45 @@ class Question: NSManagedObject {
    //      questionText: String?,answer1: String?,answer2: String?,answer3: String?,answer4: String?,trueAnswer: Int16){
    // }
     
+    func getRightAnswer() -> String? {
+        switch trueAnswer {
+        case 1:
+            return answer1;
+            
+        case 2:
+            return answer2;
+        
+        case 3:
+            return answer3;
+            
+        case 4:
+            return answer4;
+            
+        default:
+            return answer1;
+        }
+    }
+    
+    func getAnswerByNumber(number: Int) -> String? {
+        switch number {
+        case 1:
+            return answer1;
+            
+        case 2:
+            return answer2;
+            
+        case 3:
+            return answer3;
+            
+        case 4:
+            return answer4;
+            
+        default:
+            return getRightAnswer();
+        }
+    }
+
+    
 // Insert code here to add functionality to your managed object subclass
     class func getAll() -> [Question]{
         let request = NSFetchRequest(entityName: Question.className)

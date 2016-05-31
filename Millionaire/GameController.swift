@@ -22,17 +22,176 @@ class GameController: UIViewController,UITableViewDelegate,UITableViewDataSource
         navigationController?.popViewControllerAnimated(true);
     }
     
+    
+    @IBAction func infoButton(sender: UIButton) {
+    }
+    
+    
+    
+    /*
+    var answerAnimationTimer = NSTimer();
+    var answerAnimationTicks:Int = 0;
+    @objc func answerAnimationTrigger(timer: NSTimer) {
+         var answers =  timer.userInfo as! [Int];
+        answerAnimationTicks+=1;
+        if(answerAnimationTicks<5){
+             getTouchedButton(answers[1]).selected = true;
+        }
+        if(answerAnimationTicks>=5&&answerAnimationTicks<=10){
+            if(answers[0]==answers[1]){
+               getTouchedButton(answers[1]).selected = !getTouchedButton(answers[1]).selected;
+            }
+            getTouchedButton(answers[0]).highlighted = !getTouchedButton(answers[0]).highlighted;
+        }else if(answerAnimationTicks>10){
+            getTouchedButton(answers[0]).highlighted = false;
+            getTouchedButton(answers[1]).selected = false;
+            answerAnimationTimer.invalidate();
+            self.view.userInteractionEnabled = true;
+            game?.answerTouched(answers[1]);
+        }
+    }
+    
+    func highlightAnswer(touchedAnswer: Int) {
+        guard let rightAnswer = game?.getCurrentQuestion()?.trueAnswer else {
+            return;
+        }
+        self.view.userInteractionEnabled = false;
+        var answers:[Int] = [Int(rightAnswer)];
+        answers.append(touchedAnswer);
+        answerAnimationTicks = 0;
+        answerAnimationTimer.invalidate();
+        getTouchedButton(touchedAnswer).selected = true;
+        answerAnimationTimer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: #selector(answerAnimationTrigger), userInfo: answers, repeats: true);
+    }
+    */
+    
+    func getAnswerByNumber(buttonNumber: Int) -> UIButton {
+        switch buttonNumber {
+        case 1:
+            return firstAnswerButton;
+        case 2:
+            return secondAnswerButton;
+        case 3:
+            return thirdAnswerButton;
+        case 4:
+            return fourthAnswerButton;
+        default:
+            return firstAnswerButton;
+        }
+    }
+    
+    func lockInterface() {
+        self.view.userInteractionEnabled = false;
+    }
+    func unlockInterface() {
+        self.view.userInteractionEnabled = true;
+    }
+    
+    func triggerAnimation(rightAnswer:Int, answer: Int,answerAnimationTicks:Int) {
+        if(answerAnimationTicks<5){
+            getAnswerByNumber(answer).selected = true;
+        }
+        if(answerAnimationTicks>=5&&answerAnimationTicks<=10){
+            if(rightAnswer==answer){
+                getAnswerByNumber(answer).selected = !getAnswerByNumber(answer).selected;
+            }
+            getAnswerByNumber(rightAnswer).highlighted = !getAnswerByNumber(rightAnswer).highlighted;
+        }else if(answerAnimationTicks>10){
+            getAnswerByNumber(rightAnswer).highlighted = false;
+            getAnswerByNumber(answer).selected = false;
+        }
+    }
+    
+    func disableAnswers(answers: [Int]) {
+        if(answers.count==0){
+            for answerNumber in 1...4{
+                getAnswerByNumber(answerNumber).enabled = true;
+            }
+        }else{
+        for answerNumber in answers {
+            getAnswerByNumber(answerNumber).enabled = false;
+            }
+        }
+    }
+    
+    @IBAction func fiftyfiftyButton(sender: UIButton) {
+        showAlertView(
+            NSLocalizedString("ALERT_TITLE_FIFTYFIFTY",comment:"5050 title"),
+            message: NSLocalizedString("ALERT_MESSAGE_FIFTYFIFTY",comment:"5050 msg"),
+            yesHandler: {_ in
+                sender.enabled = false;
+                self.game?.fiftyFiftyTouched();},
+            noHandler: {_ in })
+    }
+    
+    
+//    func showCustomizedAlertView(title: String, message: String,yesHandler:(action: UIAlertAction)->Void, noHandler:(action: UIAlertAction)->Void)  {
+//        let messageTitle = "jhg";
+//        let messageText = "text";
+//        let alert = UIAlertController(title: messageTitle, message: messageText, preferredStyle: UIAlertControllerStyle.Alert)
+//        
+//        
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: noHandler)
+//        alert.addAction(cancelAction)
+//        
+//        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: yesHandler);
+//        alert.addAction(OKAction)
+//        
+//       
+//        
+//        alert.setValue(NSAttributedString(string: messageTitle, attributes: [NSFontAttributeName : UIFont.systemFontOfSize(17),NSForegroundColorAttributeName : UIColor.redColor()]), forKey: "attributedTitle")
+//        
+//        alert.setValue(NSAttributedString(string: messageText, attributes: [NSFontAttributeName : UIFont.systemFontOfSize(17),NSForegroundColorAttributeName : UIColor.redColor()]), forKey: "attributedMessage");
+//        
+//        let subview = alert.view.subviews.first! as UIView;
+//
+//        
+//        let alertContentView = subview.subviews.first! as UIView;
+//        alertContentView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.1)
+//        
+//        self.presentViewController(alert, animated: true) {
+//            // ...
+//        }
+//    }
+    
+    @IBAction func callFriendButton(sender: UIButton) {
+       // sender.enabled = false;
+      
+        showAlertView(
+                      NSLocalizedString("ALERT_TITLE_CALL_FRIEND",comment:"Call friend title"),
+                      message: NSLocalizedString("ALERT_MESSAGE_CALL_FRIEND",comment:"Call friend msg"),
+                      yesHandler: {_ in sender.enabled = false;},
+                      noHandler: {_ in })
+        
+        
+    }
+  
+    @IBAction func askAudienceButton(sender: UIButton) {
+        showAlertView(
+            NSLocalizedString("ALERT_TITLE_ASKAUDIENCE",comment:"ask audience title"),
+            message: NSLocalizedString("ALERT_MESSAGE_ASKAUDIENCE",comment:"ask audience msg"),
+            yesHandler: {_ in sender.enabled = false;},
+            noHandler: {_ in })
+
+        
+    }
+    
+    
     @IBAction func firstAnswerButtonClicked(sender: UIButton) {
         game?.answerTouched(1)
-    }
+        //highlightAnswer(1);
+        }
     @IBAction func secondAnswerButtonClicked(sender: UIButton) {
         game?.answerTouched(2)
+        //highlightAnswer(2)
     }
     @IBAction func thirdAnswerButtonClicked(sender: UIButton) {
         game?.answerTouched(3)
+       // highlightAnswer(3)
       }
     @IBAction func fourthAnswerButtonClicked(sender: UIButton) {
         game?.answerTouched(4)
+      //  highlightAnswer(4)
     }
     
 

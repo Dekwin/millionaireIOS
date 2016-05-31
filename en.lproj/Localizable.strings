@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Millionaire
+
+  Created by Igor Kasyanenko on 21.05.16.
+  Copyright © 2016 Igor Kasyanenko. All rights reserved.
+*/
+ALERT_TITLE_CALL_FRIEND = "Call";
+ALERT_MESSAGE_CALL_FRIEND = "Call a friend?";
+
+ALERT_TITLE_FIFTYFIFTY = "50/50";
+ALERT_MESSAGE_FIFTYFIFTY = "Drop two wrong answers?";
+
+ALERT_TITLE_ASKAUDIENCE = "Audience";
+ALERT_MESSAGE_ASKAUDIENCE = "Ask audience?";
+
+TITLE_GAME_FINISHED = "Game over";
+
+MESSAGE_GAME_FINISHED_TIME = "Time is over";
+
+MESSAGE_GAME_FINISHED_SUCCESS = "Game finished, you won 1000000!";
+
+MESSAGE_RETRY = "\nRetry?";
+
+MESSAGE_WRONG_ANSWER = "Wrong answer";
+
+MESSAGE_RIGHT_ANSWER = "right answer";

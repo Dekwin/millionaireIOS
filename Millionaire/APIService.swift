@@ -19,6 +19,7 @@ class APIService {
          
             guard response.result.value != nil else
             {
+                print(response.result.error);
                 callback?(nil, response.result.error);
                 return;
             }

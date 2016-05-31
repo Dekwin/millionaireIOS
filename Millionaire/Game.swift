@@ -12,4 +12,9 @@ protocol Game {
     func getQuestions() -> [Question];
     func answerTouched(answerNumber:Int);
     func getScoreForPositionInScoreTable(position:Int) -> Double ;
+    func getCurrentQuestion() -> Question?;
+    
+    func fiftyFiftyTouched();
+    func callFriendTouched();
+    func audienceHelpTouched();
 }

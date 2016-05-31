@@ -17,6 +17,7 @@
 		1730FC261CC3EE810030D136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1730FC241CC3EE810030D136 /* LaunchScreen.storyboard */; };
 		1730FC311CC3EE810030D136 /* MillionaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730FC301CC3EE810030D136 /* MillionaireTests.swift */; };
 		1730FC3C1CC3EE810030D136 /* MillionaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730FC3B1CC3EE810030D136 /* MillionaireUITests.swift */; };
+		174F50BC1CF0B7F800A8CD65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 174F50BE1CF0B7F800A8CD65 /* Localizable.strings */; };
 		1767CB571CC6CB2400A3473C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1767CB561CC6CB2400A3473C /* Alamofire.framework */; };
 		17888FA91CCA674A00A6C3DF /* GameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17888FA81CCA674A00A6C3DF /* GameFactory.swift */; };
 		17888FAB1CCA677C00A6C3DF /* SingleGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17888FAA1CCA677C00A6C3DF /* SingleGame.swift */; };
@@ -110,6 +111,8 @@
 		1730FC4A1CC437680030D136 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1730FC4C1CC4378C0030D136 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		174B8F731CCA3FFE003D7C44 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = "Millionaire.xcodeproj/Crypto-master/build/Debug-iphoneos/CommonCrypto.framework"; sourceTree = "<group>"; };
+		174F50BD1CF0B7F800A8CD65 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		174F50C11CF0B81C00A8CD65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1767CAF01CC6CB0B00A3473C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1767CAF11CC6CB0B00A3473C /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		1767CAF21CC6CB0B00A3473C /* Alamofire.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Alamofire.podspec; sourceTree = "<group>"; };
@@ -379,6 +382,7 @@
 		1730FC0F1CC3EE810030D136 = {
 			isa = PBXGroup;
 			children = (
+				174F50BE1CF0B7F800A8CD65 /* Localizable.strings */,
 				1794DE521CD015B50085EA37 /* Media.xcassets */,
 				17D921411CCE7BEE00F3C0B0 /* Crypto.framework */,
 				1730FC1A1CC3EE810030D136 /* Millionaire */,
@@ -1070,6 +1074,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1730FC261CC3EE810030D136 /* LaunchScreen.storyboard in Resources */,
+				174F50BC1CF0B7F800A8CD65 /* Localizable.strings in Resources */,
 				1794DE531CD015B50085EA37 /* Media.xcassets in Resources */,
 				1730FC211CC3EE810030D136 /* Main.storyboard in Resources */,
 			);
@@ -1286,6 +1291,15 @@
 				1730FC4A1CC437680030D136 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		174F50BE1CF0B7F800A8CD65 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174F50BD1CF0B7F800A8CD65 /* ru */,
+				174F50C11CF0B81C00A8CD65 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		1767CB021CC6CB0B00A3473C /* Main.storyboard */ = {
