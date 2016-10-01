@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14669CEBE22F8FA3EE53E127 /* Pods_Millionaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FBE9D608CFACB7F54AEB57 /* Pods_Millionaire.framework */; };
 		173026CE1CC682A0008A046C /* QuestionsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 173026CC1CC682A0008A046C /* QuestionsModel.xcdatamodeld */; };
 		173026E11CC69532008A046C /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173026DF1CC69532008A046C /* Question+CoreDataProperties.swift */; };
 		173026E21CC69532008A046C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173026E01CC69532008A046C /* Question.swift */; };
@@ -15,53 +16,42 @@
 		1730FC1E1CC3EE810030D136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730FC1D1CC3EE810030D136 /* ViewController.swift */; };
 		1730FC211CC3EE810030D136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1730FC1F1CC3EE810030D136 /* Main.storyboard */; };
 		1730FC261CC3EE810030D136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1730FC241CC3EE810030D136 /* LaunchScreen.storyboard */; };
-		1730FC311CC3EE810030D136 /* MillionaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730FC301CC3EE810030D136 /* MillionaireTests.swift */; };
-		1730FC3C1CC3EE810030D136 /* MillionaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730FC3B1CC3EE810030D136 /* MillionaireUITests.swift */; };
 		174F50BC1CF0B7F800A8CD65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 174F50BE1CF0B7F800A8CD65 /* Localizable.strings */; };
-		1767CB571CC6CB2400A3473C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1767CB561CC6CB2400A3473C /* Alamofire.framework */; };
+		1783CE2E1DA0419A007B7FCC /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1783CE2C1DA0419A007B7FCC /* Crypto.framework */; };
+		1783CE2F1DA0419A007B7FCC /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1783CE2D1DA0419A007B7FCC /* CommonCrypto.framework */; };
+		1783CE301DA041D5007B7FCC /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1783CE2C1DA0419A007B7FCC /* Crypto.framework */; };
+		1783CE311DA041D5007B7FCC /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1783CE2C1DA0419A007B7FCC /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1783CE321DA041D5007B7FCC /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1783CE2D1DA0419A007B7FCC /* CommonCrypto.framework */; };
+		1783CE331DA041D5007B7FCC /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1783CE2D1DA0419A007B7FCC /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17888FA91CCA674A00A6C3DF /* GameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17888FA81CCA674A00A6C3DF /* GameFactory.swift */; };
 		17888FAB1CCA677C00A6C3DF /* SingleGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17888FAA1CCA677C00A6C3DF /* SingleGame.swift */; };
 		17888FAD1CCA74DE00A6C3DF /* ISinglePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17888FAC1CCA74DE00A6C3DF /* ISinglePlay.swift */; };
 		17888FAF1CCA84B800A6C3DF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17888FAE1CCA84B800A6C3DF /* Game.swift */; };
 		178C71701CC4D7D4005EF01E /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178C716F1CC4D7D4005EF01E /* GameController.swift */; };
 		1794DE531CD015B50085EA37 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1794DE521CD015B50085EA37 /* Media.xcassets */; };
-		17AA20551CC799D200E87E75 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AA20541CC799D200E87E75 /* SwiftyJSON.framework */; };
 		17CD76BC1CC816EC0026172A /* ServerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD76BB1CC816EC0026172A /* ServerSettings.swift */; };
 		17D4C0841CC7A12D0034B057 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4C0831CC7A12D0034B057 /* APIService.swift */; };
 		17D4C0881CC7AA900034B057 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4C0871CC7AA900034B057 /* DataProvider.swift */; };
 		17D4C08A1CC7D5200034B057 /* ScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4C0891CC7D5200034B057 /* ScoreCell.swift */; };
-		17D921421CCE7BEE00F3C0B0 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D921411CCE7BEE00F3C0B0 /* Crypto.framework */; };
-		17D921431CCE7BEE00F3C0B0 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17D921411CCE7BEE00F3C0B0 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		17DAE33F1CCA3FAB00F0A473 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DAE33E1CCA3FAB00F0A473 /* Crypto.framework */; };
-		188B5CE613722CCE731AA76C /* Pods_MillionaireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBA07E4E3D33996E748F362 /* Pods_MillionaireTests.framework */; };
-		B9E20C114B40945262A0F4F8 /* Pods_MillionaireUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33351A26158A5635510F7C84 /* Pods_MillionaireUITests.framework */; };
+		17E0B9AF1DA03935005C1F6F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729AB931DA01C5E001AA048 /* Alamofire.framework */; };
+		17E0B9B11DA0393B005C1F6F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E0B9B01DA0393B005C1F6F /* SwiftyJSON.framework */; };
+		17E0B9B51DA0399B005C1F6F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729AB931DA01C5E001AA048 /* Alamofire.framework */; };
+		17E0B9B61DA0399B005C1F6F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1729AB931DA01C5E001AA048 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17E0B9B81DA039B2005C1F6F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E0B9B01DA0393B005C1F6F /* SwiftyJSON.framework */; };
+		17E0B9B91DA039B2005C1F6F /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17E0B9B01DA0393B005C1F6F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1730FC2D1CC3EE810030D136 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1730FC101CC3EE810030D136 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1730FC171CC3EE810030D136;
-			remoteInfo = Millionaire;
-		};
-		1730FC381CC3EE810030D136 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1730FC101CC3EE810030D136 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1730FC171CC3EE810030D136;
-			remoteInfo = Millionaire;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		17D921441CCE7BEE00F3C0B0 /* Embed Frameworks */ = {
+		17E0B9B71DA0399B005C1F6F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				17D921431CCE7BEE00F3C0B0 /* Crypto.framework in Embed Frameworks */,
+				1783CE331DA041D5007B7FCC /* CommonCrypto.framework in Embed Frameworks */,
+				1783CE311DA041D5007B7FCC /* Crypto.framework in Embed Frameworks */,
+				17E0B9B91DA039B2005C1F6F /* SwiftyJSON.framework in Embed Frameworks */,
+				17E0B9B61DA0399B005C1F6F /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +59,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0BF7857280D03D9DB03E5DBD /* Pods-MillionaireUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MillionaireUITests/Pods-MillionaireUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		170246181CC6CA8D00085881 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		170246191CC6CA8D00085881 /* LICENSE 2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE 2"; sourceTree = "<group>"; };
 		1702461A1CC6CA8D00085881 /* README 2.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README 2.md"; sourceTree = "<group>"; };
@@ -90,6 +79,7 @@
 		1702462A1CC6CA8D00085881 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		1702462B1CC6CA8D00085881 /* Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		1702462C1CC6CA8D00085881 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		1729AB931DA01C5E001AA048 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Developer/Xcode/DerivedData/Millionaire-cfeiwjiijmwaakbjibzhczbxdcgw/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		173026CD1CC682A0008A046C /* QuestionsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuestionsModel.xcdatamodel; sourceTree = "<group>"; };
 		173026D51CC6948D008A046C /* Millionaire-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Millionaire-Bridging-Header.h"; sourceTree = "<group>"; };
 		173026DF1CC69532008A046C /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -101,204 +91,38 @@
 		1730FC201CC3EE810030D136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1730FC251CC3EE810030D136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1730FC271CC3EE810030D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1730FC2C1CC3EE810030D136 /* MillionaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MillionaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1730FC301CC3EE810030D136 /* MillionaireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionaireTests.swift; sourceTree = "<group>"; };
 		1730FC321CC3EE810030D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1730FC371CC3EE810030D136 /* MillionaireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MillionaireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1730FC3B1CC3EE810030D136 /* MillionaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionaireUITests.swift; sourceTree = "<group>"; };
 		1730FC3D1CC3EE810030D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1730FC491CC437670030D136 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		1730FC4A1CC437680030D136 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1730FC4C1CC4378C0030D136 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		174B8F731CCA3FFE003D7C44 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = "Millionaire.xcodeproj/Crypto-master/build/Debug-iphoneos/CommonCrypto.framework"; sourceTree = "<group>"; };
 		174F50BD1CF0B7F800A8CD65 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		174F50C11CF0B81C00A8CD65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1767CAF01CC6CB0B00A3473C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		1767CAF11CC6CB0B00A3473C /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		1767CAF21CC6CB0B00A3473C /* Alamofire.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Alamofire.podspec; sourceTree = "<group>"; };
-		1767CAF31CC6CB0B00A3473C /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
-		1767CAF61CC6CB0B00A3473C /* Alamofire.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Alamofire.xcworkspace; sourceTree = "<group>"; };
-		1767CAF71CC6CB0B00A3473C /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		1767CAF81CC6CB0B00A3473C /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		1767CAFA1CC6CB0B00A3473C /* Alamofire 2.0 Migration Guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Alamofire 2.0 Migration Guide.md"; sourceTree = "<group>"; };
-		1767CAFB1CC6CB0B00A3473C /* Alamofire 3.0 Migration Guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Alamofire 3.0 Migration Guide.md"; sourceTree = "<group>"; };
-		1767CAFD1CC6CB0B00A3473C /* iOS Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "iOS Example.xcodeproj"; sourceTree = "<group>"; };
-		1767CB031CC6CB0B00A3473C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1767CB041CC6CB0B00A3473C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1767CB051CC6CB0B00A3473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1767CB071CC6CB0B00A3473C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1767CB081CC6CB0B00A3473C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		1767CB091CC6CB0B00A3473C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		1767CB0A1CC6CB0B00A3473C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		1767CB0B1CC6CB0B00A3473C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		1767CB0C1CC6CB0B00A3473C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1767CB0E1CC6CB0B00A3473C /* Alamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
-		1767CB0F1CC6CB0B00A3473C /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		1767CB101CC6CB0B00A3473C /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
-		1767CB111CC6CB0B00A3473C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		1767CB121CC6CB0B00A3473C /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		1767CB131CC6CB0B00A3473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1767CB141CC6CB0B00A3473C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		1767CB151CC6CB0B00A3473C /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		1767CB161CC6CB0B00A3473C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		1767CB171CC6CB0B00A3473C /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		1767CB181CC6CB0B00A3473C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		1767CB191CC6CB0B00A3473C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		1767CB1A1CC6CB0B00A3473C /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		1767CB1B1CC6CB0B00A3473C /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		1767CB1C1CC6CB0B00A3473C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		1767CB1D1CC6CB0B00A3473C /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		1767CB1E1CC6CB0B00A3473C /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
-		1767CB1F1CC6CB0B00A3473C /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		1767CB201CC6CB0B00A3473C /* Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
-		1767CB211CC6CB0B00A3473C /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		1767CB231CC6CB0B00A3473C /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
-		1767CB241CC6CB0B00A3473C /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
-		1767CB251CC6CB0B00A3473C /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
-		1767CB261CC6CB0B00A3473C /* DownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTests.swift; sourceTree = "<group>"; };
-		1767CB271CC6CB0B00A3473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1767CB281CC6CB0B00A3473C /* ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTests.swift; sourceTree = "<group>"; };
-		1767CB291CC6CB0B00A3473C /* MultipartFormDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataTests.swift; sourceTree = "<group>"; };
-		1767CB2A1CC6CB0B00A3473C /* NetworkReachabilityManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManagerTests.swift; sourceTree = "<group>"; };
-		1767CB2B1CC6CB0B00A3473C /* NSURLSessionConfiguration+AlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSURLSessionConfiguration+AlamofireTests.swift"; sourceTree = "<group>"; };
-		1767CB2C1CC6CB0B00A3473C /* ParameterEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncodingTests.swift; sourceTree = "<group>"; };
-		1767CB2D1CC6CB0B00A3473C /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
-		1767CB311CC6CB0B00A3473C /* alamofire-root-ca.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alamofire-root-ca.cer"; sourceTree = "<group>"; };
-		1767CB321CC6CB0B00A3473C /* alamofire-signing-ca1.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alamofire-signing-ca1.cer"; sourceTree = "<group>"; };
-		1767CB331CC6CB0B00A3473C /* alamofire-signing-ca2.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alamofire-signing-ca2.cer"; sourceTree = "<group>"; };
-		1767CB341CC6CB0B00A3473C /* expired.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = expired.cer; sourceTree = "<group>"; };
-		1767CB351CC6CB0B00A3473C /* missing-dns-name-and-uri.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "missing-dns-name-and-uri.cer"; sourceTree = "<group>"; };
-		1767CB361CC6CB0B00A3473C /* multiple-dns-names.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "multiple-dns-names.cer"; sourceTree = "<group>"; };
-		1767CB371CC6CB0B00A3473C /* signed-by-ca1.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signed-by-ca1.cer"; sourceTree = "<group>"; };
-		1767CB381CC6CB0B00A3473C /* signed-by-ca2.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "signed-by-ca2.cer"; sourceTree = "<group>"; };
-		1767CB391CC6CB0B00A3473C /* test.alamofire.org.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.alamofire.org.cer; sourceTree = "<group>"; };
-		1767CB3A1CC6CB0B00A3473C /* valid-dns-name.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "valid-dns-name.cer"; sourceTree = "<group>"; };
-		1767CB3B1CC6CB0B00A3473C /* valid-uri.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "valid-uri.cer"; sourceTree = "<group>"; };
-		1767CB3C1CC6CB0B00A3473C /* wildcard.alamofire.org.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = wildcard.alamofire.org.cer; sourceTree = "<group>"; };
-		1767CB3E1CC6CB0B00A3473C /* intermediate-ca-disig.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "intermediate-ca-disig.cer"; sourceTree = "<group>"; };
-		1767CB3F1CC6CB0B00A3473C /* root-ca-disig.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "root-ca-disig.cer"; sourceTree = "<group>"; };
-		1767CB401CC6CB0B00A3473C /* testssl-expire.disig.sk.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "testssl-expire.disig.sk.cer"; sourceTree = "<group>"; };
-		1767CB421CC6CB0B00A3473C /* certDER.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = certDER.cer; sourceTree = "<group>"; };
-		1767CB431CC6CB0B00A3473C /* certDER.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = certDER.crt; sourceTree = "<group>"; };
-		1767CB441CC6CB0B00A3473C /* certDER.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = certDER.der; sourceTree = "<group>"; };
-		1767CB451CC6CB0B00A3473C /* certPEM.cer */ = {isa = PBXFileReference; lastKnownFileType = text; path = certPEM.cer; sourceTree = "<group>"; };
-		1767CB461CC6CB0B00A3473C /* certPEM.crt */ = {isa = PBXFileReference; lastKnownFileType = text; path = certPEM.crt; sourceTree = "<group>"; };
-		1767CB471CC6CB0B00A3473C /* keyDER.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = keyDER.der; sourceTree = "<group>"; };
-		1767CB481CC6CB0B00A3473C /* randomGibberish.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = randomGibberish.crt; sourceTree = "<group>"; };
-		1767CB4A1CC6CB0B00A3473C /* rainbow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbow.jpg; sourceTree = "<group>"; };
-		1767CB4B1CC6CB0B00A3473C /* unicorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicorn.png; sourceTree = "<group>"; };
-		1767CB4C1CC6CB0B00A3473C /* ResponseSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerializationTests.swift; sourceTree = "<group>"; };
-		1767CB4D1CC6CB0B00A3473C /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
-		1767CB4E1CC6CB0B00A3473C /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
-		1767CB4F1CC6CB0B00A3473C /* ServerTrustPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicyTests.swift; sourceTree = "<group>"; };
-		1767CB501CC6CB0B00A3473C /* SessionDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegateTests.swift; sourceTree = "<group>"; };
-		1767CB511CC6CB0B00A3473C /* String+AlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AlamofireTests.swift"; sourceTree = "<group>"; };
-		1767CB521CC6CB0B00A3473C /* TLSEvaluationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSEvaluationTests.swift; sourceTree = "<group>"; };
-		1767CB531CC6CB0B00A3473C /* UploadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTests.swift; sourceTree = "<group>"; };
-		1767CB541CC6CB0B00A3473C /* URLProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolTests.swift; sourceTree = "<group>"; };
-		1767CB551CC6CB0B00A3473C /* ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTests.swift; sourceTree = "<group>"; };
 		1767CB561CC6CB2400A3473C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Millionaire.xcodeproj/Alamofire-master/build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		1783CE2C1DA0419A007B7FCC /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
+		1783CE2D1DA0419A007B7FCC /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		17888FA81CCA674A00A6C3DF /* GameFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFactory.swift; sourceTree = "<group>"; };
 		17888FAA1CCA677C00A6C3DF /* SingleGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleGame.swift; sourceTree = "<group>"; };
 		17888FAC1CCA74DE00A6C3DF /* ISinglePlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISinglePlay.swift; sourceTree = "<group>"; };
 		17888FAE1CCA84B800A6C3DF /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		178C716F1CC4D7D4005EF01E /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		1794DE521CD015B50085EA37 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		17AA201E1CC799C700E87E75 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		17AA201F1CC799C700E87E75 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		17AA20201CC799C700E87E75 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		17AA20231CC799C700E87E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17AA20251CC799C700E87E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		17AA20271CC799C700E87E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		17AA20281CC799C700E87E75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		17AA20291CC799C700E87E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17AA202A1CC799C700E87E75 /* SwiftyJSONTests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SwiftyJSONTests.json; sourceTree = "<group>"; };
-		17AA202B1CC799C700E87E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17AA202C1CC799C700E87E75 /* Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Example.xcodeproj; sourceTree = "<group>"; };
-		17AA20301CC799C700E87E75 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
-		17AA20311CC799C700E87E75 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		17AA20321CC799C700E87E75 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		17AA20331CC799C700E87E75 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17AA20351CC799C700E87E75 /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
-		17AA20371CC799C700E87E75 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		17AA20381CC799C700E87E75 /* Info-OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
-		17AA20391CC799C700E87E75 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		17AA203A1CC799C700E87E75 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		17AA203B1CC799C700E87E75 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
-		17AA203C1CC799C700E87E75 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		17AA203D1CC799C700E87E75 /* SwiftyJSON.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftyJSON.podspec; sourceTree = "<group>"; };
-		17AA203E1CC799C700E87E75 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
-		17AA20411CC799C700E87E75 /* SwiftyJSON.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SwiftyJSON.xcworkspace; sourceTree = "<group>"; };
-		17AA20431CC799C700E87E75 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
-		17AA20441CC799C700E87E75 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
-		17AA20451CC799C700E87E75 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
-		17AA20461CC799C700E87E75 /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
-		17AA20471CC799C700E87E75 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		17AA20481CC799C700E87E75 /* Info-OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
-		17AA20491CC799C700E87E75 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		17AA204A1CC799C700E87E75 /* LiteralConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralConvertibleTests.swift; sourceTree = "<group>"; };
-		17AA204B1CC799C700E87E75 /* NumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTests.swift; sourceTree = "<group>"; };
-		17AA204C1CC799C700E87E75 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
-		17AA204D1CC799C700E87E75 /* PrintableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintableTests.swift; sourceTree = "<group>"; };
-		17AA204E1CC799C700E87E75 /* RawRepresentableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawRepresentableTests.swift; sourceTree = "<group>"; };
-		17AA204F1CC799C700E87E75 /* RawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawTests.swift; sourceTree = "<group>"; };
-		17AA20501CC799C700E87E75 /* SequenceTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTypeTests.swift; sourceTree = "<group>"; };
-		17AA20511CC799C700E87E75 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
-		17AA20521CC799C700E87E75 /* SubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
-		17AA20531CC799C700E87E75 /* Tests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tests.json; sourceTree = "<group>"; };
 		17AA20541CC799D200E87E75 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Millionaire.xcodeproj/SwiftyJSON-master/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		17CBBEA71CCA3C1F002204A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		17CBBEA91CCA3C1F002204A4 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
-		17CBBEAA1CCA3C1F002204A4 /* iOs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = iOs.playground; sourceTree = "<group>"; };
-		17CBBEAB1CCA3C1F002204A4 /* Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Mac.playground; sourceTree = "<group>"; };
-		17CBBEAC1CCA3C1F002204A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17CBBEAD1CCA3C1F002204A4 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
-		17CBBEAE1CCA3C1F002204A4 /* SHA256.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SHA256.xcodeproj; sourceTree = "<group>"; };
-		17CBBEB21CCA3C1F002204A4 /* SHA256iOs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHA256iOs.h; sourceTree = "<group>"; };
-		17CBBEB31CCA3C1F002204A4 /* SHA256Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256Tests.swift; sourceTree = "<group>"; };
-		17CBBEB61CCA3C1F002204A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17CBBEB71CCA3C1F002204A4 /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHA256Tests-Info.plist"; sourceTree = "<group>"; };
-		17CBBEB91CCA3C1F002204A4 /* SHA256-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHA256-Info.plist"; sourceTree = "<group>"; };
-		17CBBEBA1CCA3C1F002204A4 /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHA256Tests-Info.plist"; sourceTree = "<group>"; };
 		17CBBEBB1CCA3C27002204A4 /* SHA256iOs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256iOs.framework; path = "Millionaire.xcodeproj/SHA256-Swift-master/build/Debug-iphoneos/SHA256iOs.framework"; sourceTree = "<group>"; };
 		17CD76BB1CC816EC0026172A /* ServerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettings.swift; sourceTree = "<group>"; };
 		17D4C0831CC7A12D0034B057 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		17D4C0871CC7AA900034B057 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		17D4C0891CC7D5200034B057 /* ScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCell.swift; sourceTree = "<group>"; };
-		17D921411CCE7BEE00F3C0B0 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Crypto.framework; path = "/Users/igorkasyanenko/Library/Developer/Xcode/DerivedData/Millionaire-ersyfswdstwxyufohjvekhyngdch/Build/Products/Debug-iphoneos/Crypto.framework"; sourceTree = "<absolute>"; };
-		17DAE3231CCA3F8F00F0A473 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		17DAE3251CCA3F8F00F0A473 /* appletvos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = appletvos.modulemap; sourceTree = "<group>"; };
-		17DAE3261CCA3F8F00F0A473 /* appletvsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = appletvsimulator.modulemap; sourceTree = "<group>"; };
-		17DAE3271CCA3F8F00F0A473 /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
-		17DAE3281CCA3F8F00F0A473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17DAE3291CCA3F8F00F0A473 /* iphoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
-		17DAE32A1CCA3F8F00F0A473 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
-		17DAE32B1CCA3F8F00F0A473 /* macosx.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
-		17DAE32C1CCA3F8F00F0A473 /* watchos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
-		17DAE32D1CCA3F8F00F0A473 /* watchsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
-		17DAE32F1CCA3F8F00F0A473 /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
-		17DAE3301CCA3F8F00F0A473 /* Digest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
-		17DAE3311CCA3F8F00F0A473 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		17DAE3321CCA3F8F00F0A473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17DAE3331CCA3F8F00F0A473 /* NSData+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+Crypto.swift"; sourceTree = "<group>"; };
-		17DAE3341CCA3F8F00F0A473 /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
-		17DAE3351CCA3F8F00F0A473 /* Crypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Crypto.xcodeproj; sourceTree = "<group>"; };
-		17DAE3391CCA3F8F00F0A473 /* DigestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestTests.swift; sourceTree = "<group>"; };
-		17DAE33A1CCA3F8F00F0A473 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
-		17DAE33B1CCA3F8F00F0A473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17DAE33C1CCA3F8F00F0A473 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		17DAE33D1CCA3F8F00F0A473 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
-		17DAE33E1CCA3FAB00F0A473 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = "Millionaire.xcodeproj/Crypto-master/build/Debug-iphoneos/Crypto.framework"; sourceTree = "<group>"; };
+		17E0B9B01DA0393B005C1F6F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Developer/Xcode/DerivedData/Millionaire-cfeiwjiijmwaakbjibzhczbxdcgw/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		17F3F46F1CCA3D580055A8DA /* SHA256iOs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256iOs.framework; path = "Millionaire.xcodeproj/SHA256-Swift-master/build/Debug-iphoneos/SHA256iOs.framework"; sourceTree = "<group>"; };
 		17F3F4781CCA3DA70055A8DA /* SHA256iOs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256iOs.framework; path = "Millionaire.xcodeproj/SHA256-Swift-master/build/Debug-iphoneos/SHA256iOs.framework"; sourceTree = "<group>"; };
-		2562B728DF2D449E4F7E115D /* Pods-MillionaireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MillionaireTests/Pods-MillionaireTests.debug.xcconfig"; sourceTree = "<group>"; };
-		33351A26158A5635510F7C84 /* Pods_MillionaireUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		33BBCF8FB1DBBC1C27983D77 /* Pods-Millionaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Millionaire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Millionaire/Pods-Millionaire.release.xcconfig"; sourceTree = "<group>"; };
-		82AEB98DD0FFC7E1D257D01C /* Pods-Millionaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Millionaire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Millionaire/Pods-Millionaire.debug.xcconfig"; sourceTree = "<group>"; };
-		A4BD5D725F4FC346C2E56162 /* Pods-MillionaireUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MillionaireUITests/Pods-MillionaireUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A67CDDB70EA8ADB4A825EC9C /* Pods_Millionaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Millionaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9C879298A543B52F89C0A64 /* Pods-MillionaireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MillionaireTests/Pods-MillionaireTests.release.xcconfig"; sourceTree = "<group>"; };
-		EBBA07E4E3D33996E748F362 /* Pods_MillionaireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		398052C158E4EDC95B66378E /* Pods-Millionaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Millionaire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Millionaire/Pods-Millionaire.release.xcconfig"; sourceTree = "<group>"; };
+		6667CE4AFCFA0705F943F677 /* Pods_MillionaireUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FBE9D608CFACB7F54AEB57 /* Pods_Millionaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Millionaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B981EA1D63C2C1304CD02CFC /* Pods-Millionaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Millionaire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Millionaire/Pods-Millionaire.debug.xcconfig"; sourceTree = "<group>"; };
+		EAAF58346043C55F5F87E99C /* Pods_MillionaireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,26 +130,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DAE33F1CCA3FAB00F0A473 /* Crypto.framework in Frameworks */,
-				17D921421CCE7BEE00F3C0B0 /* Crypto.framework in Frameworks */,
-				17AA20551CC799D200E87E75 /* SwiftyJSON.framework in Frameworks */,
-				1767CB571CC6CB2400A3473C /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1730FC291CC3EE810030D136 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				188B5CE613722CCE731AA76C /* Pods_MillionaireTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1730FC341CC3EE810030D136 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9E20C114B40945262A0F4F8 /* Pods_MillionaireUITests.framework in Frameworks */,
+				1783CE2E1DA0419A007B7FCC /* Crypto.framework in Frameworks */,
+				1783CE2F1DA0419A007B7FCC /* CommonCrypto.framework in Frameworks */,
+				17E0B9B11DA0393B005C1F6F /* SwiftyJSON.framework in Frameworks */,
+				17E0B9AF1DA03935005C1F6F /* Alamofire.framework in Frameworks */,
+				14669CEBE22F8FA3EE53E127 /* Pods_Millionaire.framework in Frameworks */,
+				1783CE301DA041D5007B7FCC /* Crypto.framework in Frameworks */,
+				17E0B9B51DA0399B005C1F6F /* Alamofire.framework in Frameworks */,
+				1783CE321DA041D5007B7FCC /* CommonCrypto.framework in Frameworks */,
+				17E0B9B81DA039B2005C1F6F /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,14 +197,13 @@
 			children = (
 				174F50BE1CF0B7F800A8CD65 /* Localizable.strings */,
 				1794DE521CD015B50085EA37 /* Media.xcassets */,
-				17D921411CCE7BEE00F3C0B0 /* Crypto.framework */,
 				1730FC1A1CC3EE810030D136 /* Millionaire */,
 				1730FC2F1CC3EE810030D136 /* MillionaireTests */,
 				1730FC3A1CC3EE810030D136 /* MillionaireUITests */,
 				1730FC191CC3EE810030D136 /* Products */,
 				173026D51CC6948D008A046C /* Millionaire-Bridging-Header.h */,
-				EAC5486FCDE812A61E66576A /* Pods */,
 				3620853253A9EFC1660160DF /* Frameworks */,
+				333593DAD411458CD3A1A2A1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -399,8 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				1730FC181CC3EE810030D136 /* Millionaire.app */,
-				1730FC2C1CC3EE810030D136 /* MillionaireTests.xctest */,
-				1730FC371CC3EE810030D136 /* MillionaireUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -439,208 +249,6 @@
 			path = MillionaireUITests;
 			sourceTree = "<group>";
 		};
-		1767CAEF1CC6CB0B00A3473C /* Alamofire-master */ = {
-			isa = PBXGroup;
-			children = (
-				1767CAF01CC6CB0B00A3473C /* .gitignore */,
-				1767CAF11CC6CB0B00A3473C /* .travis.yml */,
-				1767CAF21CC6CB0B00A3473C /* Alamofire.podspec */,
-				1767CAF31CC6CB0B00A3473C /* Alamofire.xcodeproj */,
-				1767CAF61CC6CB0B00A3473C /* Alamofire.xcworkspace */,
-				1767CAF71CC6CB0B00A3473C /* CHANGELOG.md */,
-				1767CAF81CC6CB0B00A3473C /* CONTRIBUTING.md */,
-				1767CAF91CC6CB0B00A3473C /* Documentation */,
-				1767CAFC1CC6CB0B00A3473C /* Example */,
-				1767CB0A1CC6CB0B00A3473C /* LICENSE */,
-				1767CB0B1CC6CB0B00A3473C /* Package.swift */,
-				1767CB0C1CC6CB0B00A3473C /* README.md */,
-				1767CB0D1CC6CB0B00A3473C /* Source */,
-				1767CB221CC6CB0B00A3473C /* Tests */,
-			);
-			name = "Alamofire-master";
-			path = "Millionaire.xcodeproj/Alamofire-master";
-			sourceTree = "<group>";
-		};
-		1767CAF41CC6CB0B00A3473C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1767CAF91CC6CB0B00A3473C /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				1767CAFA1CC6CB0B00A3473C /* Alamofire 2.0 Migration Guide.md */,
-				1767CAFB1CC6CB0B00A3473C /* Alamofire 3.0 Migration Guide.md */,
-			);
-			path = Documentation;
-			sourceTree = "<group>";
-		};
-		1767CAFC1CC6CB0B00A3473C /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				1767CAFD1CC6CB0B00A3473C /* iOS Example.xcodeproj */,
-				1767CB011CC6CB0B00A3473C /* Resources */,
-				1767CB061CC6CB0B00A3473C /* Source */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		1767CAFE1CC6CB0B00A3473C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1767CB011CC6CB0B00A3473C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB021CC6CB0B00A3473C /* Main.storyboard */,
-				1767CB041CC6CB0B00A3473C /* Images.xcassets */,
-				1767CB051CC6CB0B00A3473C /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		1767CB061CC6CB0B00A3473C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB071CC6CB0B00A3473C /* AppDelegate.swift */,
-				1767CB081CC6CB0B00A3473C /* DetailViewController.swift */,
-				1767CB091CC6CB0B00A3473C /* MasterViewController.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		1767CB0D1CC6CB0B00A3473C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB0E1CC6CB0B00A3473C /* Alamofire.h */,
-				1767CB0F1CC6CB0B00A3473C /* Alamofire.swift */,
-				1767CB101CC6CB0B00A3473C /* Download.swift */,
-				1767CB111CC6CB0B00A3473C /* Error.swift */,
-				1767CB121CC6CB0B00A3473C /* Info-tvOS.plist */,
-				1767CB131CC6CB0B00A3473C /* Info.plist */,
-				1767CB141CC6CB0B00A3473C /* Manager.swift */,
-				1767CB151CC6CB0B00A3473C /* MultipartFormData.swift */,
-				1767CB161CC6CB0B00A3473C /* NetworkReachabilityManager.swift */,
-				1767CB171CC6CB0B00A3473C /* Notifications.swift */,
-				1767CB181CC6CB0B00A3473C /* ParameterEncoding.swift */,
-				1767CB191CC6CB0B00A3473C /* Request.swift */,
-				1767CB1A1CC6CB0B00A3473C /* Response.swift */,
-				1767CB1B1CC6CB0B00A3473C /* ResponseSerialization.swift */,
-				1767CB1C1CC6CB0B00A3473C /* Result.swift */,
-				1767CB1D1CC6CB0B00A3473C /* ServerTrustPolicy.swift */,
-				1767CB1E1CC6CB0B00A3473C /* Stream.swift */,
-				1767CB1F1CC6CB0B00A3473C /* Timeline.swift */,
-				1767CB201CC6CB0B00A3473C /* Upload.swift */,
-				1767CB211CC6CB0B00A3473C /* Validation.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		1767CB221CC6CB0B00A3473C /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB231CC6CB0B00A3473C /* AuthenticationTests.swift */,
-				1767CB241CC6CB0B00A3473C /* BaseTestCase.swift */,
-				1767CB251CC6CB0B00A3473C /* CacheTests.swift */,
-				1767CB261CC6CB0B00A3473C /* DownloadTests.swift */,
-				1767CB271CC6CB0B00A3473C /* Info.plist */,
-				1767CB281CC6CB0B00A3473C /* ManagerTests.swift */,
-				1767CB291CC6CB0B00A3473C /* MultipartFormDataTests.swift */,
-				1767CB2A1CC6CB0B00A3473C /* NetworkReachabilityManagerTests.swift */,
-				1767CB2B1CC6CB0B00A3473C /* NSURLSessionConfiguration+AlamofireTests.swift */,
-				1767CB2C1CC6CB0B00A3473C /* ParameterEncodingTests.swift */,
-				1767CB2D1CC6CB0B00A3473C /* RequestTests.swift */,
-				1767CB2E1CC6CB0B00A3473C /* Resources */,
-				1767CB4C1CC6CB0B00A3473C /* ResponseSerializationTests.swift */,
-				1767CB4D1CC6CB0B00A3473C /* ResponseTests.swift */,
-				1767CB4E1CC6CB0B00A3473C /* ResultTests.swift */,
-				1767CB4F1CC6CB0B00A3473C /* ServerTrustPolicyTests.swift */,
-				1767CB501CC6CB0B00A3473C /* SessionDelegateTests.swift */,
-				1767CB511CC6CB0B00A3473C /* String+AlamofireTests.swift */,
-				1767CB521CC6CB0B00A3473C /* TLSEvaluationTests.swift */,
-				1767CB531CC6CB0B00A3473C /* UploadTests.swift */,
-				1767CB541CC6CB0B00A3473C /* URLProtocolTests.swift */,
-				1767CB551CC6CB0B00A3473C /* ValidationTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		1767CB2E1CC6CB0B00A3473C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB2F1CC6CB0B00A3473C /* Certificates */,
-				1767CB491CC6CB0B00A3473C /* Images */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		1767CB2F1CC6CB0B00A3473C /* Certificates */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB301CC6CB0B00A3473C /* alamofire.org */,
-				1767CB3D1CC6CB0B00A3473C /* disig.sk */,
-				1767CB411CC6CB0B00A3473C /* selfSignedAndMalformedCerts */,
-			);
-			path = Certificates;
-			sourceTree = "<group>";
-		};
-		1767CB301CC6CB0B00A3473C /* alamofire.org */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB311CC6CB0B00A3473C /* alamofire-root-ca.cer */,
-				1767CB321CC6CB0B00A3473C /* alamofire-signing-ca1.cer */,
-				1767CB331CC6CB0B00A3473C /* alamofire-signing-ca2.cer */,
-				1767CB341CC6CB0B00A3473C /* expired.cer */,
-				1767CB351CC6CB0B00A3473C /* missing-dns-name-and-uri.cer */,
-				1767CB361CC6CB0B00A3473C /* multiple-dns-names.cer */,
-				1767CB371CC6CB0B00A3473C /* signed-by-ca1.cer */,
-				1767CB381CC6CB0B00A3473C /* signed-by-ca2.cer */,
-				1767CB391CC6CB0B00A3473C /* test.alamofire.org.cer */,
-				1767CB3A1CC6CB0B00A3473C /* valid-dns-name.cer */,
-				1767CB3B1CC6CB0B00A3473C /* valid-uri.cer */,
-				1767CB3C1CC6CB0B00A3473C /* wildcard.alamofire.org.cer */,
-			);
-			path = alamofire.org;
-			sourceTree = "<group>";
-		};
-		1767CB3D1CC6CB0B00A3473C /* disig.sk */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB3E1CC6CB0B00A3473C /* intermediate-ca-disig.cer */,
-				1767CB3F1CC6CB0B00A3473C /* root-ca-disig.cer */,
-				1767CB401CC6CB0B00A3473C /* testssl-expire.disig.sk.cer */,
-			);
-			path = disig.sk;
-			sourceTree = "<group>";
-		};
-		1767CB411CC6CB0B00A3473C /* selfSignedAndMalformedCerts */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB421CC6CB0B00A3473C /* certDER.cer */,
-				1767CB431CC6CB0B00A3473C /* certDER.crt */,
-				1767CB441CC6CB0B00A3473C /* certDER.der */,
-				1767CB451CC6CB0B00A3473C /* certPEM.cer */,
-				1767CB461CC6CB0B00A3473C /* certPEM.crt */,
-				1767CB471CC6CB0B00A3473C /* keyDER.der */,
-				1767CB481CC6CB0B00A3473C /* randomGibberish.crt */,
-			);
-			path = selfSignedAndMalformedCerts;
-			sourceTree = "<group>";
-		};
-		1767CB491CC6CB0B00A3473C /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				1767CB4A1CC6CB0B00A3473C /* rainbow.jpg */,
-				1767CB4B1CC6CB0B00A3473C /* unicorn.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		17888FA71CCA671E00A6C3DF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,172 +269,6 @@
 			name = controllers;
 			sourceTree = "<group>";
 		};
-		17AA201D1CC799C700E87E75 /* SwiftyJSON-master */ = {
-			isa = PBXGroup;
-			children = (
-				17AA201E1CC799C700E87E75 /* .gitignore */,
-				17AA201F1CC799C700E87E75 /* .travis.yml */,
-				17AA20201CC799C700E87E75 /* CHANGELOG.md */,
-				17AA20211CC799C700E87E75 /* Example */,
-				17AA20311CC799C700E87E75 /* LICENSE */,
-				17AA20321CC799C700E87E75 /* Package.swift */,
-				17AA20331CC799C700E87E75 /* README.md */,
-				17AA20341CC799C700E87E75 /* scripts */,
-				17AA20361CC799C700E87E75 /* Source */,
-				17AA203D1CC799C700E87E75 /* SwiftyJSON.podspec */,
-				17AA203E1CC799C700E87E75 /* SwiftyJSON.xcodeproj */,
-				17AA20411CC799C700E87E75 /* SwiftyJSON.xcworkspace */,
-				17AA20421CC799C700E87E75 /* Tests */,
-			);
-			name = "SwiftyJSON-master";
-			path = "Millionaire.xcodeproj/SwiftyJSON-master";
-			sourceTree = "<group>";
-		};
-		17AA20211CC799C700E87E75 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				17AA20221CC799C700E87E75 /* Example */,
-				17AA202C1CC799C700E87E75 /* Example.xcodeproj */,
-				17AA20301CC799C700E87E75 /* Playground.playground */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		17AA20221CC799C700E87E75 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				17AA20231CC799C700E87E75 /* AppDelegate.swift */,
-				17AA20241CC799C700E87E75 /* LaunchScreen.xib */,
-				17AA20261CC799C700E87E75 /* Main.storyboard */,
-				17AA20281CC799C700E87E75 /* Images.xcassets */,
-				17AA20291CC799C700E87E75 /* Info.plist */,
-				17AA202A1CC799C700E87E75 /* SwiftyJSONTests.json */,
-				17AA202B1CC799C700E87E75 /* ViewController.swift */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		17AA202D1CC799C700E87E75 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
-		17AA20341CC799C700E87E75 /* scripts */ = {
-			isa = PBXGroup;
-			children = (
-				17AA20351CC799C700E87E75 /* ci.sh */,
-			);
-			path = scripts;
-			sourceTree = "<group>";
-		};
-		17AA20361CC799C700E87E75 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				17AA20371CC799C700E87E75 /* Info-iOS.plist */,
-				17AA20381CC799C700E87E75 /* Info-OSX.plist */,
-				17AA20391CC799C700E87E75 /* Info-tvOS.plist */,
-				17AA203A1CC799C700E87E75 /* Info-watchOS.plist */,
-				17AA203B1CC799C700E87E75 /* SwiftyJSON.h */,
-				17AA203C1CC799C700E87E75 /* SwiftyJSON.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		17AA203F1CC799C700E87E75 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
-		17AA20421CC799C700E87E75 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				17AA20431CC799C700E87E75 /* ArrayTests.swift */,
-				17AA20441CC799C700E87E75 /* BaseTests.swift */,
-				17AA20451CC799C700E87E75 /* ComparableTests.swift */,
-				17AA20461CC799C700E87E75 /* DictionaryTests.swift */,
-				17AA20471CC799C700E87E75 /* Info-iOS.plist */,
-				17AA20481CC799C700E87E75 /* Info-OSX.plist */,
-				17AA20491CC799C700E87E75 /* Info-tvOS.plist */,
-				17AA204A1CC799C700E87E75 /* LiteralConvertibleTests.swift */,
-				17AA204B1CC799C700E87E75 /* NumberTests.swift */,
-				17AA204C1CC799C700E87E75 /* PerformanceTests.swift */,
-				17AA204D1CC799C700E87E75 /* PrintableTests.swift */,
-				17AA204E1CC799C700E87E75 /* RawRepresentableTests.swift */,
-				17AA204F1CC799C700E87E75 /* RawTests.swift */,
-				17AA20501CC799C700E87E75 /* SequenceTypeTests.swift */,
-				17AA20511CC799C700E87E75 /* StringTests.swift */,
-				17AA20521CC799C700E87E75 /* SubscriptTests.swift */,
-				17AA20531CC799C700E87E75 /* Tests.json */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		17CBBEA61CCA3C1F002204A4 /* SHA256-Swift-master */ = {
-			isa = PBXGroup;
-			children = (
-				17CBBEA71CCA3C1F002204A4 /* .gitignore */,
-				17CBBEA81CCA3C1F002204A4 /* CommonCrypto */,
-				17CBBEAA1CCA3C1F002204A4 /* iOs.playground */,
-				17CBBEAB1CCA3C1F002204A4 /* Mac.playground */,
-				17CBBEAC1CCA3C1F002204A4 /* README.md */,
-				17CBBEAD1CCA3C1F002204A4 /* SHA256.swift */,
-				17CBBEAE1CCA3C1F002204A4 /* SHA256.xcodeproj */,
-				17CBBEB11CCA3C1F002204A4 /* SHA256iOs */,
-				17CBBEB31CCA3C1F002204A4 /* SHA256Tests.swift */,
-				17CBBEB41CCA3C1F002204A4 /* Supporting Files */,
-			);
-			name = "SHA256-Swift-master";
-			path = "Millionaire.xcodeproj/SHA256-Swift-master";
-			sourceTree = "<group>";
-		};
-		17CBBEA81CCA3C1F002204A4 /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				17CBBEA91CCA3C1F002204A4 /* module.map */,
-			);
-			path = CommonCrypto;
-			sourceTree = "<group>";
-		};
-		17CBBEAF1CCA3C1F002204A4 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
-		17CBBEB11CCA3C1F002204A4 /* SHA256iOs */ = {
-			isa = PBXGroup;
-			children = (
-				17CBBEB21CCA3C1F002204A4 /* SHA256iOs.h */,
-			);
-			path = SHA256iOs;
-			sourceTree = "<group>";
-		};
-		17CBBEB41CCA3C1F002204A4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				17CBBEB51CCA3C1F002204A4 /* iOs */,
-				17CBBEB81CCA3C1F002204A4 /* Mac */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		17CBBEB51CCA3C1F002204A4 /* iOs */ = {
-			isa = PBXGroup;
-			children = (
-				17CBBEB61CCA3C1F002204A4 /* Info.plist */,
-				17CBBEB71CCA3C1F002204A4 /* SHA256Tests-Info.plist */,
-			);
-			path = iOs;
-			sourceTree = "<group>";
-		};
-		17CBBEB81CCA3C1F002204A4 /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				17CBBEB91CCA3C1F002204A4 /* SHA256-Info.plist */,
-				17CBBEBA1CCA3C1F002204A4 /* SHA256Tests-Info.plist */,
-			);
-			path = Mac;
-			sourceTree = "<group>";
-		};
 		17D4C0821CC7A10D0034B057 /* REST */ = {
 			isa = PBXGroup;
 			children = (
@@ -837,98 +279,33 @@
 			name = REST;
 			sourceTree = "<group>";
 		};
-		17DAE3221CCA3F8F00F0A473 /* Crypto-master */ = {
+		333593DAD411458CD3A1A2A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17DAE3231CCA3F8F00F0A473 /* .gitignore */,
-				17DAE3241CCA3F8F00F0A473 /* CommonCrypto */,
-				17DAE32E1CCA3F8F00F0A473 /* Crypto */,
-				17DAE3351CCA3F8F00F0A473 /* Crypto.xcodeproj */,
-				17DAE3381CCA3F8F00F0A473 /* CryptoTests */,
-				17DAE33C1CCA3F8F00F0A473 /* LICENSE */,
-				17DAE33D1CCA3F8F00F0A473 /* Readme.markdown */,
+				B981EA1D63C2C1304CD02CFC /* Pods-Millionaire.debug.xcconfig */,
+				398052C158E4EDC95B66378E /* Pods-Millionaire.release.xcconfig */,
 			);
-			name = "Crypto-master";
-			path = "Millionaire.xcodeproj/Crypto-master";
-			sourceTree = "<group>";
-		};
-		17DAE3241CCA3F8F00F0A473 /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				17DAE3251CCA3F8F00F0A473 /* appletvos.modulemap */,
-				17DAE3261CCA3F8F00F0A473 /* appletvsimulator.modulemap */,
-				17DAE3271CCA3F8F00F0A473 /* CommonCrypto.xcconfig */,
-				17DAE3281CCA3F8F00F0A473 /* Info.plist */,
-				17DAE3291CCA3F8F00F0A473 /* iphoneos.modulemap */,
-				17DAE32A1CCA3F8F00F0A473 /* iphonesimulator.modulemap */,
-				17DAE32B1CCA3F8F00F0A473 /* macosx.modulemap */,
-				17DAE32C1CCA3F8F00F0A473 /* watchos.modulemap */,
-				17DAE32D1CCA3F8F00F0A473 /* watchsimulator.modulemap */,
-			);
-			path = CommonCrypto;
-			sourceTree = "<group>";
-		};
-		17DAE32E1CCA3F8F00F0A473 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				17DAE32F1CCA3F8F00F0A473 /* Crypto.h */,
-				17DAE3301CCA3F8F00F0A473 /* Digest.swift */,
-				17DAE3311CCA3F8F00F0A473 /* HMAC.swift */,
-				17DAE3321CCA3F8F00F0A473 /* Info.plist */,
-				17DAE3331CCA3F8F00F0A473 /* NSData+Crypto.swift */,
-				17DAE3341CCA3F8F00F0A473 /* String+Crypto.swift */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		17DAE3361CCA3F8F00F0A473 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
-		17DAE3381CCA3F8F00F0A473 /* CryptoTests */ = {
-			isa = PBXGroup;
-			children = (
-				17DAE3391CCA3F8F00F0A473 /* DigestTests.swift */,
-				17DAE33A1CCA3F8F00F0A473 /* HMACTests.swift */,
-				17DAE33B1CCA3F8F00F0A473 /* Info.plist */,
-			);
-			path = CryptoTests;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		3620853253A9EFC1660160DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				174B8F731CCA3FFE003D7C44 /* CommonCrypto.framework */,
-				17DAE33E1CCA3FAB00F0A473 /* Crypto.framework */,
-				17DAE3221CCA3F8F00F0A473 /* Crypto-master */,
+				1783CE2C1DA0419A007B7FCC /* Crypto.framework */,
+				1783CE2D1DA0419A007B7FCC /* CommonCrypto.framework */,
+				17E0B9B01DA0393B005C1F6F /* SwiftyJSON.framework */,
+				1729AB931DA01C5E001AA048 /* Alamofire.framework */,
 				17F3F4781CCA3DA70055A8DA /* SHA256iOs.framework */,
 				17F3F46F1CCA3D580055A8DA /* SHA256iOs.framework */,
 				17CBBEBB1CCA3C27002204A4 /* SHA256iOs.framework */,
-				17CBBEA61CCA3C1F002204A4 /* SHA256-Swift-master */,
 				17AA20541CC799D200E87E75 /* SwiftyJSON.framework */,
-				17AA201D1CC799C700E87E75 /* SwiftyJSON-master */,
 				1767CB561CC6CB2400A3473C /* Alamofire.framework */,
-				1767CAEF1CC6CB0B00A3473C /* Alamofire-master */,
 				170246171CC6CA8D00085881 /* Alamofire */,
-				A67CDDB70EA8ADB4A825EC9C /* Pods_Millionaire.framework */,
-				EBBA07E4E3D33996E748F362 /* Pods_MillionaireTests.framework */,
-				33351A26158A5635510F7C84 /* Pods_MillionaireUITests.framework */,
+				71FBE9D608CFACB7F54AEB57 /* Pods_Millionaire.framework */,
+				EAAF58346043C55F5F87E99C /* Pods_MillionaireTests.framework */,
+				6667CE4AFCFA0705F943F677 /* Pods_MillionaireUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EAC5486FCDE812A61E66576A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				82AEB98DD0FFC7E1D257D01C /* Pods-Millionaire.debug.xcconfig */,
-				33BBCF8FB1DBBC1C27983D77 /* Pods-Millionaire.release.xcconfig */,
-				2562B728DF2D449E4F7E115D /* Pods-MillionaireTests.debug.xcconfig */,
-				E9C879298A543B52F89C0A64 /* Pods-MillionaireTests.release.xcconfig */,
-				0BF7857280D03D9DB03E5DBD /* Pods-MillionaireUITests.debug.xcconfig */,
-				A4BD5D725F4FC346C2E56162 /* Pods-MillionaireUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -938,13 +315,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1730FC401CC3EE810030D136 /* Build configuration list for PBXNativeTarget "Millionaire" */;
 			buildPhases = (
-				91736AA7C8A79BDBBD9E0F22 /* Check Pods Manifest.lock */,
+				267E608172AC27511F747FBB /* [CP] Check Pods Manifest.lock */,
 				1730FC141CC3EE810030D136 /* Sources */,
 				1730FC151CC3EE810030D136 /* Frameworks */,
 				1730FC161CC3EE810030D136 /* Resources */,
-				D554C28A1FDF51D057993D95 /* Embed Pods Frameworks */,
-				CCFCF148DC95DAF540A2EDA0 /* Copy Pods Resources */,
-				17D921441CCE7BEE00F3C0B0 /* Embed Frameworks */,
+				BE0CFBCC96262ABAFB130060 /* [CP] Embed Pods Frameworks */,
+				2A754791464E64709503AC7D /* [CP] Copy Pods Resources */,
+				17E0B9B71DA0399B005C1F6F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -954,47 +331,6 @@
 			productName = Millionaire;
 			productReference = 1730FC181CC3EE810030D136 /* Millionaire.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1730FC2B1CC3EE810030D136 /* MillionaireTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1730FC431CC3EE810030D136 /* Build configuration list for PBXNativeTarget "MillionaireTests" */;
-			buildPhases = (
-				1DE52E795CED6EDEEB37D47D /* Check Pods Manifest.lock */,
-				1730FC281CC3EE810030D136 /* Sources */,
-				1730FC291CC3EE810030D136 /* Frameworks */,
-				1730FC2A1CC3EE810030D136 /* Resources */,
-				369B6DB0CA891A15E42FF7D1 /* Embed Pods Frameworks */,
-				A50C83E56D4476CBA8C5376A /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1730FC2E1CC3EE810030D136 /* PBXTargetDependency */,
-			);
-			name = MillionaireTests;
-			productName = MillionaireTests;
-			productReference = 1730FC2C1CC3EE810030D136 /* MillionaireTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1730FC361CC3EE810030D136 /* MillionaireUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1730FC461CC3EE810030D136 /* Build configuration list for PBXNativeTarget "MillionaireUITests" */;
-			buildPhases = (
-				49E2E1E5D73C203C7DFFEADE /* Check Pods Manifest.lock */,
-				1730FC331CC3EE810030D136 /* Sources */,
-				1730FC341CC3EE810030D136 /* Frameworks */,
-				1730FC351CC3EE810030D136 /* Resources */,
-				29BB133E06CB133575927677 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1730FC391CC3EE810030D136 /* PBXTargetDependency */,
-			);
-			name = MillionaireUITests;
-			productName = MillionaireUITests;
-			productReference = 1730FC371CC3EE810030D136 /* MillionaireUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -1009,16 +345,7 @@
 					1730FC171CC3EE810030D136 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 5BCDXKAUFJ;
-					};
-					1730FC2B1CC3EE810030D136 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 5BCDXKAUFJ;
-						TestTargetID = 1730FC171CC3EE810030D136;
-					};
-					1730FC361CC3EE810030D136 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 5BCDXKAUFJ;
-						TestTargetID = 1730FC171CC3EE810030D136;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -1033,37 +360,9 @@
 			mainGroup = 1730FC0F1CC3EE810030D136;
 			productRefGroup = 1730FC191CC3EE810030D136 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1767CAF41CC6CB0B00A3473C /* Products */;
-					ProjectRef = 1767CAF31CC6CB0B00A3473C /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = 17DAE3361CCA3F8F00F0A473 /* Products */;
-					ProjectRef = 17DAE3351CCA3F8F00F0A473 /* Crypto.xcodeproj */;
-				},
-				{
-					ProductGroup = 17AA202D1CC799C700E87E75 /* Products */;
-					ProjectRef = 17AA202C1CC799C700E87E75 /* Example.xcodeproj */;
-				},
-				{
-					ProductGroup = 1767CAFE1CC6CB0B00A3473C /* Products */;
-					ProjectRef = 1767CAFD1CC6CB0B00A3473C /* iOS Example.xcodeproj */;
-				},
-				{
-					ProductGroup = 17CBBEAF1CCA3C1F002204A4 /* Products */;
-					ProjectRef = 17CBBEAE1CCA3C1F002204A4 /* SHA256.xcodeproj */;
-				},
-				{
-					ProductGroup = 17AA203F1CC799C700E87E75 /* Products */;
-					ProjectRef = 17AA203E1CC799C700E87E75 /* SwiftyJSON.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1730FC171CC3EE810030D136 /* Millionaire */,
-				1730FC2B1CC3EE810030D136 /* MillionaireTests */,
-				1730FC361CC3EE810030D136 /* MillionaireUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1080,31 +379,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1730FC2A1CC3EE810030D136 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1730FC351CC3EE810030D136 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DE52E795CED6EDEEB37D47D /* Check Pods Manifest.lock */ = {
+		267E608172AC27511F747FBB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1112,89 +397,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		29BB133E06CB133575927677 /* Copy Pods Resources */ = {
+		2A754791464E64709503AC7D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MillionaireUITests/Pods-MillionaireUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		369B6DB0CA891A15E42FF7D1 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MillionaireTests/Pods-MillionaireTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		49E2E1E5D73C203C7DFFEADE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		91736AA7C8A79BDBBD9E0F22 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A50C83E56D4476CBA8C5376A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MillionaireTests/Pods-MillionaireTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCFCF148DC95DAF540A2EDA0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1202,14 +412,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Millionaire/Pods-Millionaire-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D554C28A1FDF51D057993D95 /* Embed Pods Frameworks */ = {
+		BE0CFBCC96262ABAFB130060 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1242,36 +452,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1730FC281CC3EE810030D136 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1730FC311CC3EE810030D136 /* MillionaireTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1730FC331CC3EE810030D136 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1730FC3C1CC3EE810030D136 /* MillionaireUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1730FC2E1CC3EE810030D136 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1730FC171CC3EE810030D136 /* Millionaire */;
-			targetProxy = 1730FC2D1CC3EE810030D136 /* PBXContainerItemProxy */;
-		};
-		1730FC391CC3EE810030D136 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1730FC171CC3EE810030D136 /* Millionaire */;
-			targetProxy = 1730FC381CC3EE810030D136 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1730FC1F1CC3EE810030D136 /* Main.storyboard */ = {
@@ -1300,30 +481,6 @@
 				174F50C11CF0B81C00A8CD65 /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		1767CB021CC6CB0B00A3473C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1767CB031CC6CB0B00A3473C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		17AA20241CC799C700E87E75 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17AA20251CC799C700E87E75 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		17AA20261CC799C700E87E75 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17AA20271CC799C700E87E75 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1416,100 +573,58 @@
 		};
 		1730FC411CC3EE810030D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82AEB98DD0FFC7E1D257D01C /* Pods-Millionaire.debug.xcconfig */;
+			baseConfigurationReference = B981EA1D63C2C1304CD02CFC /* Pods-Millionaire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5BCDXKAUFJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/Alamofire-master/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/SwiftyJSON-master/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/SHA256-Swift-master/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/Crypto-master/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Millionaire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dekwin.Millionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Millionaire-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1730FC421CC3EE810030D136 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33BBCF8FB1DBBC1C27983D77 /* Pods-Millionaire.release.xcconfig */;
+			baseConfigurationReference = 398052C158E4EDC95B66378E /* Pods-Millionaire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5BCDXKAUFJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/Alamofire-master/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/SwiftyJSON-master/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/SHA256-Swift-master/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Millionaire.xcodeproj/Crypto-master/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Millionaire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dekwin.Millionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Millionaire-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		1730FC441CC3EE810030D136 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2562B728DF2D449E4F7E115D /* Pods-MillionaireTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MillionaireTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dekwin.MillionaireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Millionaire.app/Millionaire";
-			};
-			name = Debug;
-		};
-		1730FC451CC3EE810030D136 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9C879298A543B52F89C0A64 /* Pods-MillionaireTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MillionaireTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dekwin.MillionaireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Millionaire.app/Millionaire";
-			};
-			name = Release;
-		};
-		1730FC471CC3EE810030D136 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BF7857280D03D9DB03E5DBD /* Pods-MillionaireUITests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = MillionaireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dekwin.MillionaireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Millionaire;
-			};
-			name = Debug;
-		};
-		1730FC481CC3EE810030D136 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4BD5D725F4FC346C2E56162 /* Pods-MillionaireUITests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = MillionaireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dekwin.MillionaireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Millionaire;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1530,24 +645,6 @@
 			buildConfigurations = (
 				1730FC411CC3EE810030D136 /* Debug */,
 				1730FC421CC3EE810030D136 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1730FC431CC3EE810030D136 /* Build configuration list for PBXNativeTarget "MillionaireTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1730FC441CC3EE810030D136 /* Debug */,
-				1730FC451CC3EE810030D136 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1730FC461CC3EE810030D136 /* Build configuration list for PBXNativeTarget "MillionaireUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1730FC471CC3EE810030D136 /* Debug */,
-				1730FC481CC3EE810030D136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

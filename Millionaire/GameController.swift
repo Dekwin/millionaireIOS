@@ -18,12 +18,12 @@ class GameController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     @IBOutlet weak var timeButton: UIButton!
     
-    @IBAction func exitButton(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true);
+    @IBAction func exitButton(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true);
     }
     
     
-    @IBAction func infoButton(sender: UIButton) {
+    @IBAction func infoButton(_ sender: UIButton) {
     }
     
     
@@ -65,7 +65,7 @@ class GameController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     */
     
-    func getAnswerByNumber(buttonNumber: Int) -> UIButton {
+    func getAnswerByNumber(_ buttonNumber: Int) -> UIButton {
         switch buttonNumber {
         case 1:
             return firstAnswerButton;
@@ -81,45 +81,45 @@ class GameController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func lockInterface() {
-        self.view.userInteractionEnabled = false;
+        self.view.isUserInteractionEnabled = false;
     }
     func unlockInterface() {
-        self.view.userInteractionEnabled = true;
+        self.view.isUserInteractionEnabled = true;
     }
     
-    func triggerAnimation(rightAnswer:Int, answer: Int,answerAnimationTicks:Int) {
+    func triggerAnimation(_ rightAnswer:Int, answer: Int,answerAnimationTicks:Int) {
         if(answerAnimationTicks<5){
-            getAnswerByNumber(answer).selected = true;
+            getAnswerByNumber(answer).isSelected = true;
         }
         if(answerAnimationTicks>=5&&answerAnimationTicks<=10){
             if(rightAnswer==answer){
-                getAnswerByNumber(answer).selected = !getAnswerByNumber(answer).selected;
+                getAnswerByNumber(answer).isSelected = !getAnswerByNumber(answer).isSelected;
             }
-            getAnswerByNumber(rightAnswer).highlighted = !getAnswerByNumber(rightAnswer).highlighted;
+            getAnswerByNumber(rightAnswer).isHighlighted = !getAnswerByNumber(rightAnswer).isHighlighted;
         }else if(answerAnimationTicks>10){
-            getAnswerByNumber(rightAnswer).highlighted = false;
-            getAnswerByNumber(answer).selected = false;
+            getAnswerByNumber(rightAnswer).isHighlighted = false;
+            getAnswerByNumber(answer).isSelected = false;
         }
     }
     
-    func disableAnswers(answers: [Int]) {
+    func disableAnswers(_ answers: [Int]) {
         if(answers.count==0){
             for answerNumber in 1...4{
-                getAnswerByNumber(answerNumber).enabled = true;
+                getAnswerByNumber(answerNumber).isEnabled = true;
             }
         }else{
         for answerNumber in answers {
-            getAnswerByNumber(answerNumber).enabled = false;
+            getAnswerByNumber(answerNumber).isEnabled = false;
             }
         }
     }
     
-    @IBAction func fiftyfiftyButton(sender: UIButton) {
+    @IBAction func fiftyfiftyButton(_ sender: UIButton) {
         showAlertView(
             NSLocalizedString("ALERT_TITLE_FIFTYFIFTY",comment:"5050 title"),
             message: NSLocalizedString("ALERT_MESSAGE_FIFTYFIFTY",comment:"5050 msg"),
             yesHandler: {_ in
-                sender.enabled = false;
+                sender.isEnabled = false;
                 self.game?.fiftyFiftyTouched();},
             noHandler: {_ in })
     }
@@ -154,42 +154,42 @@ class GameController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        }
 //    }
     
-    @IBAction func callFriendButton(sender: UIButton) {
+    @IBAction func callFriendButton(_ sender: UIButton) {
        // sender.enabled = false;
       
         showAlertView(
                       NSLocalizedString("ALERT_TITLE_CALL_FRIEND",comment:"Call friend title"),
                       message: NSLocalizedString("ALERT_MESSAGE_CALL_FRIEND",comment:"Call friend msg"),
-                      yesHandler: {_ in sender.enabled = false;},
+                      yesHandler: {_ in sender.isEnabled = false;},
                       noHandler: {_ in })
         
         
     }
   
-    @IBAction func askAudienceButton(sender: UIButton) {
+    @IBAction func askAudienceButton(_ sender: UIButton) {
         showAlertView(
             NSLocalizedString("ALERT_TITLE_ASKAUDIENCE",comment:"ask audience title"),
             message: NSLocalizedString("ALERT_MESSAGE_ASKAUDIENCE",comment:"ask audience msg"),
-            yesHandler: {_ in sender.enabled = false;},
+            yesHandler: {_ in sender.isEnabled = false;},
             noHandler: {_ in })
 
         
     }
     
     
-    @IBAction func firstAnswerButtonClicked(sender: UIButton) {
+    @IBAction func firstAnswerButtonClicked(_ sender: UIButton) {
         game?.answerTouched(1)
         //highlightAnswer(1);
         }
-    @IBAction func secondAnswerButtonClicked(sender: UIButton) {
+    @IBAction func secondAnswerButtonClicked(_ sender: UIButton) {
         game?.answerTouched(2)
         //highlightAnswer(2)
     }
-    @IBAction func thirdAnswerButtonClicked(sender: UIButton) {
+    @IBAction func thirdAnswerButtonClicked(_ sender: UIButton) {
         game?.answerTouched(3)
        // highlightAnswer(3)
       }
-    @IBAction func fourthAnswerButtonClicked(sender: UIButton) {
+    @IBAction func fourthAnswerButtonClicked(_ sender: UIButton) {
         game?.answerTouched(4)
       //  highlightAnswer(4)
     }
@@ -233,66 +233,66 @@ class GameController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
-    func setScoreTablePosition(position: Int){
-        scoreTable.selectRowAtIndexPath(NSIndexPath(forRow: position,inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.None)
+    func setScoreTablePosition(_ position: Int){
+        scoreTable.selectRow(at: IndexPath(row: position,section: 0), animated: true, scrollPosition: UITableViewScrollPosition.none)
     }
     
-    func gameFinished(title: String, message: String, yesHandler:(action: UIAlertAction)->Void,noHandler:(action: UIAlertAction)->Void){
+    func gameFinished(_ title: String, message: String, yesHandler: @escaping (_ action: UIAlertAction)->Void,noHandler: @escaping (_ action: UIAlertAction)->Void){
         showAlertView(title, message: message ,yesHandler: yesHandler,noHandler: noHandler);
     }
    
-    func initScoreTable(questions:[Question]){
+    func initScoreTable(_ questions:[Question]){
         scoreTable.reloadData();
     }
     
-    func initQuestion(question:Question){
+    func initQuestion(_ question:Question){
         questionLabel.text = question.questionText;
-        firstAnswerButton.setTitle(question.answer1, forState: .Normal);
-        secondAnswerButton.setTitle(question.answer2, forState: .Normal);
-        thirdAnswerButton.setTitle(question.answer3, forState: .Normal);
-        fourthAnswerButton.setTitle(question.answer4, forState: .Normal);
+        firstAnswerButton.setTitle(question.answer1, for: UIControlState());
+        secondAnswerButton.setTitle(question.answer2, for: UIControlState());
+        thirdAnswerButton.setTitle(question.answer3, for: UIControlState());
+        fourthAnswerButton.setTitle(question.answer4, for: UIControlState());
     }
    
-    func setTime(timeLeft:Int){
-        timeButton.setTitle(String(timeLeft), forState: .Normal);
+    func setTime(_ timeLeft:Int){
+        timeButton.setTitle(String(timeLeft), for: UIControlState());
     }
    
     func exit(){
         exitButton(self);
     }
     
-    func showAlertView(title: String,message: String, yesHandler: (action:UIAlertAction)->Void, noHandler: (action:UIAlertAction)->Void)  {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default, handler:  yesHandler))
-        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Cancel, handler: noHandler))
-        self.presentViewController(alert, animated: true, completion: nil)
+    func showAlertView(_ title: String,message: String, yesHandler: @escaping (_ action:UIAlertAction)->Void, noHandler: @escaping (_ action:UIAlertAction)->Void)  {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler:  yesHandler))
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler: noHandler))
+        self.present(alert, animated: true, completion: nil)
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             guard let game = game else{
             return 0;
         }
         return game.getQuestions().count;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:ScoreCell = tableView.dequeueReusableCellWithIdentifier("ScoreCell") as! ScoreCell;
-        cell.backgroundColor = UIColor.clearColor();
-        cell.textLabel?.textColor = UIColor.whiteColor();
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:ScoreCell = tableView.dequeueReusableCell(withIdentifier: "ScoreCell") as! ScoreCell;
+        cell.backgroundColor = UIColor.clear;
+        cell.textLabel?.textColor = UIColor.white;
         cell.textLabel?.font = UIFont(name:"Helvetica", size:20.0);
         //cell.textLabel?.minimumFontSize = 50.0;
-        cell.textLabel?.textAlignment = .Center
+        cell.textLabel?.textAlignment = .center
         if let g = game {
-            cell.textLabel!.text = String(Int(g.getScoreForPositionInScoreTable(indexPath.row)))+"$";
+            cell.textLabel!.text = String(Int(g.getScoreForPositionInScoreTable((indexPath as NSIndexPath).row)))+"$";
         }
         return cell;
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
        // self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
         

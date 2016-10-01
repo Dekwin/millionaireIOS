@@ -12,15 +12,15 @@ import SwiftyJSON
 
 class APIService {
     
-    static func fetchData(fromSavedUrl url: NSURL,parameters:[String: AnyObject], callback: ((JSON?, NSError?) -> Void)?) {
+    static func fetchData(fromSavedUrl url: URL,parameters:[String: AnyObject], callback: ((JSON?, NSError?) -> Void)?) {
         
         
-        Alamofire.request(.POST, url,parameters: parameters).responseJSON { (response) -> Void in
+        Alamofire.request( url, method: .post, parameters: parameters).responseJSON { (response) -> Void in
          
             guard response.result.value != nil else
             {
                 print(response.result.error);
-                callback?(nil, response.result.error);
+                callback?(nil, response.result.error as NSError?);
                 return;
             }
             

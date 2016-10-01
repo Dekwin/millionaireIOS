@@ -10,8 +10,8 @@ import Foundation
 protocol Game {
     func start()->Bool;
     func getQuestions() -> [Question];
-    func answerTouched(answerNumber:Int);
-    func getScoreForPositionInScoreTable(position:Int) -> Double ;
+    func answerTouched(_ answerNumber:Int);
+    func getScoreForPositionInScoreTable(_ position:Int) -> Double ;
     func getCurrentQuestion() -> Question?;
     
     func fiftyFiftyTouched();

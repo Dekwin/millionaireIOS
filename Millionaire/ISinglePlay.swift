@@ -13,15 +13,15 @@ protocol ISinglePlay {
     
     func lockInterface();
     func unlockInterface();
-    func triggerAnimation(rightAnswer:Int, answer: Int,answerAnimationTicks:Int);
+    func triggerAnimation(_ rightAnswer:Int, answer: Int,answerAnimationTicks:Int);
     
-    func disableAnswers(answers:[Int]);
+    func disableAnswers(_ answers:[Int]);
     
-    func setScoreTablePosition(position: Int);
-    func gameFinished(title: String, message: String, yesHandler:(action: UIAlertAction)->Void,noHandler:(action: UIAlertAction)->Void);
-    func initScoreTable(questions:[Question]);
-    func initQuestion(question:Question);
-    func setTime(timeLeft:Int);
+    func setScoreTablePosition(_ position: Int);
+    func gameFinished(_ title: String, message: String, yesHandler:@escaping(_ action: UIAlertAction)->Void,noHandler:@escaping(_ action: UIAlertAction)->Void);
+    func initScoreTable(_ questions:[Question]);
+    func initQuestion(_ question:Question);
+    func setTime(_ timeLeft:Int);
     func exit();
     
     

@@ -9,7 +9,7 @@
 import Foundation
 
 class GameFactory {
-   static func createSingleGame(controller:ISinglePlay) -> Game {
+   static func createSingleGame(_ controller:ISinglePlay) -> Game {
         return SingleGame(singlePlayController: controller);
     }
     

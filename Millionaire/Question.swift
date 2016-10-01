@@ -15,62 +15,40 @@ class Question: NSManagedObject {
     static let className = "Question";
     
     
-    class var entity: NSEntityDescription {
-        return NSEntityDescription.entityForName(className, inManagedObjectContext: CoreDataHelper.instance.context)!
+    
+    
+//    let entity = NSEntityDescription.entityForName("Car", inManagedObjectContext: context)
+//    let car = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: context)
+//    car.setValue("Ferrari", forKey: “name”)
+//
+//  //  We can generate NSManagedObject subclass for our entity in that case the code will be like this
+//    
+//    
+//    let entity = NSEntityDescription.entityForName("Car", inManagedObjectContext: context)
+//    let car = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: context) as! Car
+//    car.name = “Ferrari"
+
+    
+    
+    class var entit: NSEntityDescription {
+        return NSEntityDescription.entity(forEntityName: className, in: CoreDataHelper.instance.context)!
     }
     
     convenience init(){
-        self.init(entity: Question.entity, insertIntoManagedObjectContext: CoreDataHelper.instance.context)
+        self.init(entity: Question.entit, insertInto: CoreDataHelper.instance.context)
     }
     
    // convenience init(id: Int32,postedTime: Int64,updatedTime: Int64,level: Int32,
    //      questionText: String?,answer1: String?,answer2: String?,answer3: String?,answer4: String?,trueAnswer: Int16){
    // }
-    
-    func getRightAnswer() -> String? {
-        switch trueAnswer {
-        case 1:
-            return answer1;
-            
-        case 2:
-            return answer2;
-        
-        case 3:
-            return answer3;
-            
-        case 4:
-            return answer4;
-            
-        default:
-            return answer1;
-        }
-    }
-    
-    func getAnswerByNumber(number: Int) -> String? {
-        switch number {
-        case 1:
-            return answer1;
-            
-        case 2:
-            return answer2;
-            
-        case 3:
-            return answer3;
-            
-        case 4:
-            return answer4;
-            
-        default:
-            return getRightAnswer();
-        }
-    }
+  
 
     
 // Insert code here to add functionality to your managed object subclass
     class func getAll() -> [Question]{
-        let request = NSFetchRequest(entityName: Question.className)
+        let request: NSFetchRequest<NSFetchRequestResult>  = NSFetchRequest(entityName: Question.className)
         do{
-            let result = try CoreDataHelper.instance.context.executeFetchRequest(request)
+            let result = try CoreDataHelper.instance.context.fetch(request)
             return result as! [Question]
         }catch{
             return [Question]()
@@ -78,11 +56,11 @@ class Question: NSManagedObject {
         
     }
     
-    class func getAll(predicate: NSPredicate) -> [Question]{
-        let request = NSFetchRequest(entityName: Question.className)
+    class func getAll(_ predicate: NSPredicate) -> [Question]{
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: Question.className)
         request.predicate = predicate;
         do{
-            let result = try CoreDataHelper.instance.context.executeFetchRequest(request)
+            let result = try CoreDataHelper.instance.context.fetch(request)
             return result as! [Question]
         }catch{
             return [Question]()
@@ -91,10 +69,10 @@ class Question: NSManagedObject {
     
     
     class func deleteAll(){
-        let fRequest = NSFetchRequest(entityName: Question.className)
+        let fRequest: NSFetchRequest<NSFetchRequestResult>  = NSFetchRequest(entityName: Question.className)
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fRequest)
         do{
-            try CoreDataHelper.instance.coordinator.executeRequest(deleteRequest, withContext: CoreDataHelper.instance.context);
+            try CoreDataHelper.instance.coordinator.execute(deleteRequest, with: CoreDataHelper.instance.context);
         }catch let error as NSError {
             debugPrint(error)
         }

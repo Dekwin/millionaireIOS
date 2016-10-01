@@ -12,7 +12,7 @@ class SingleGame: Game {
     let singlePlayController:ISinglePlay;
     var questions:[Question];
     
-    var timer:NSTimer = NSTimer();
+    var timer:Timer = Timer();
     var timerCounter:Int = 0;
     var maxScoreInTable:Double = 1000000;
     var currentQuestionPosition:Int = 0;
@@ -50,13 +50,13 @@ class SingleGame: Game {
         return questions;
     }
     
-    func getProgressionValue(n:Double) -> Double {
+    func getProgressionValue(_ n:Double) -> Double {
         let q = 2.0;
         let a1:Double = maxScoreInTable/pow(q,(Double(questions.count)-1));
         return a1*pow(q,n-1);
     }
     
-    func getScoreForPositionInScoreTable(position:Int) -> Double {
+    func getScoreForPositionInScoreTable(_ position:Int) -> Double {
         return getProgressionValue(Double(questions.count-position));
     }
 
@@ -64,10 +64,10 @@ class SingleGame: Game {
         timerCounter=60;
         singlePlayController.setTime(timerCounter);
         timer.invalidate();
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true);
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true);
     }
     
-    @objc func updateTime(timer:NSTimer)  {
+    @objc func updateTime(_ timer:Timer)  {
         timerCounter-=1;
         singlePlayController.setTime(timerCounter);
        // print(timerCounter)
@@ -86,7 +86,7 @@ class SingleGame: Game {
         }
     }
     
-    func answerTouched(answerNumber:Int) {
+    func answerTouched(_ answerNumber:Int) {
         if(useAnimation){
         highlightAnswer(answerNumber);
         }else{
@@ -105,10 +105,10 @@ class SingleGame: Game {
     }
     
     
-    var answerAnimationTimer = NSTimer();
+    var answerAnimationTimer = Timer();
     var answerAnimationTicks:Int = 0;
     
-    func highlightAnswer(touchedAnswer: Int) {
+    func highlightAnswer(_ touchedAnswer: Int) {
         guard let rightAnswer = getCurrentQuestion()?.trueAnswer else {
             return;
         }
@@ -122,10 +122,10 @@ class SingleGame: Game {
         singlePlayController.lockInterface();
         singlePlayController.triggerAnimation(Int(rightAnswer), answer: touchedAnswer, answerAnimationTicks: 0);
         
-        answerAnimationTimer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: #selector(answerAnimationTrigger), userInfo: touchedAnswer, repeats: true);
+        answerAnimationTimer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(answerAnimationTrigger), userInfo: touchedAnswer, repeats: true);
     }
 
-    @objc func answerAnimationTrigger(timer: NSTimer){
+    @objc func answerAnimationTrigger(_ timer: Timer){
         let touchedAnswer = timer.userInfo as! Int;
         if(currentQuestionPosition <= questions.count-1){
             answerAnimationTicks+=1;
@@ -168,7 +168,7 @@ class SingleGame: Game {
     
     
     
-    func checkAnswer(answerNumber: Int) {
+    func checkAnswer(_ answerNumber: Int) {
         
        if(currentQuestionPosition <= questions.count-1){
         
@@ -231,7 +231,7 @@ class SingleGame: Game {
     }
     
     
-    func getRandomWithExclusion( start: Int, end: Int, exclude: Int) -> [Int] {
+    func getRandomWithExclusion( _ start: Int, end: Int, exclude: Int) -> [Int] {
         var random = Int(UInt32(start) + UInt32(arc4random_uniform(UInt32(end - start))));
         if (random >=  exclude) {
             random += 1;

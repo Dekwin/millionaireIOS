@@ -24,5 +24,44 @@ extension Question {
     @NSManaged var answer3: String?
     @NSManaged var answer4: String?
     @NSManaged var trueAnswer: Int16
+    
+    
+    func getRightAnswer() -> String? {
+        switch trueAnswer {
+        case 1:
+            return answer1;
+            
+        case 2:
+            return answer2;
+            
+        case 3:
+            return answer3;
+            
+        case 4:
+            return answer4;
+            
+        default:
+            return answer1;
+        }
+    }
+    
+    func getAnswerByNumber(_ number: Int) -> String? {
+        switch number {
+        case 1:
+            return answer1;
+            
+        case 2:
+            return answer2;
+            
+        case 3:
+            return answer3;
+            
+        case 4:
+            return answer4;
+            
+        default:
+            return getRightAnswer();
+        }
+    }
 
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 class ServerSettings {
-    static let host:NSURL = NSURL(fileURLWithPath: "http://185.4.66.155:6882");
+    static let host:URL = URL(fileURLWithPath: "http://185.4.66.155:6882");
     static let checkSyncDatePath: String = "";
     static let synchronizeQuestionsPath:String =  "/millionaire/sync";
     
